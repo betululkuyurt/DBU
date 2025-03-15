@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body class="min-h-screen bg-white dark:bg-gray-900">
     <!-- Navigation -->
@@ -45,39 +44,25 @@
     </header>
 
     <main>
-        <!-- Hero Section with Geometric Background -->
-        <section class="hero-geometric relative min-h-screen flex items-center justify-center overflow-hidden bg-dark">
-            <!-- Geometric Background Elements -->
-            <div class="geometric-bg">
-                <div class="geometric-gradient"></div>
-                
-                <div class="elegant-shape shape-1"></div>
-                <div class="elegant-shape shape-2"></div>
-                <div class="elegant-shape shape-3"></div>
-                <div class="elegant-shape shape-4"></div>
-                <div class="elegant-shape shape-5"></div>
-            </div>
-
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
+            <div id="particles-js" class="absolute inset-0"></div>
             <div class="container relative z-10 mx-auto px-4 text-center">
-                <div class="hero-content">
-                    <div class="badge">
-                        <img src="https://kokonutui.com/logo.svg" alt="DBU" width="20" height="20">
-                        <span>DBU: AI Super App</span>
-                    </div>
-
-                    <h1 class="hero-title">
-                        <span class="title-primary">Elevate Your</span>
-                        <br>
-                        <span class="title-accent">Digital Vision</span>
+                <div class="fade-in-up">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+                        DBU: AI Super App
                     </h1>
-
-                    <p class="hero-description">
+                    <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
                         Empowering users with advanced AI capabilities through an innovative super app platform
                     </p>
+                    <button id="learn-more" class="animate-bounce px-8 py-3 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
-
-            <div class="overlay-gradient"></div>
         </section>
 
         <!-- Project Info Section -->
@@ -116,31 +101,37 @@
                 <!-- Student 1 -->
                 <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative">
-                        <img src="https://placehold.co/400x400" class="w-full aspect-square object-cover">
+                        <img src="/placeholder.svg?height=400&width=400"  class="w-full aspect-square object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
                             <h3 class="text-2xl font-bold text-white">Deniz Özcan</h3>
+                           <!-- <p class="text-primary-100">Frontend Developer</p> -->
                         </div>
                     </div>
+                    
                 </div>
     
                 <!-- Student 2 -->
                 <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative">
-                        <img src="https://placehold.co/400x400" class="w-full aspect-square object-cover">
+                        <img src="/placeholder.svg?height=400&width=400"  class="w-full aspect-square object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
                             <h3 class="text-2xl font-bold text-white">Betül Ülkü Yurt</h3>
+                           <!-- <p class="text-primary-100">Backend Developer</p> --> 
                         </div>
                     </div>
+                    
                 </div>
     
                 <!-- Student 3 -->
                 <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                     <div class="relative">
-                        <img src="https://placehold.co/400x400" class="w-full aspect-square object-cover">
+                        <img src="/placeholder.svg?height=400&width=400"  class="w-full aspect-square object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
                             <h3 class="text-2xl font-bold text-white"> Umut Şahin</h3>
+                          <!-- <p class="text-primary-100">ML Engineer</p> -->  
                         </div>
                     </div>
+                    
                 </div>
             </div>
 
@@ -150,11 +141,13 @@
                 <div class="max-w-md mx-auto">
                     <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-1">
                         <div class="relative">
-                            <img src="https://placehold.co/400x400" class="w-full aspect-square object-cover">
+                            <img src="/placeholder.svg?height=400&width=400"  class="w-full aspect-square object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                                 <h3 class="text-xl font-bold text-white">Emin Kuğu</h3>
+                                
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -166,21 +159,25 @@
                     <!-- Jury Member 1 -->
                     <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-1">
                         <div class="relative">
-                            <img src="https://placehold.co/400x400" class="w-full aspect-square object-cover">
+                            <img src="/placeholder.svg?height=400&width=400" class="w-full aspect-square object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                                 <h3 class="text-xl font-bold text-white">Tansel Dökeroğlu</h3>
+                                
                             </div>
                         </div>
+                        
                     </div>
 
                     <!-- Jury Member 2 -->
                     <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-1">
                         <div class="relative">
-                            <img src="https://placehold.co/400x400" class="w-full aspect-square object-cover">
+                            <img src="/placeholder.svg?height=400&width=400"  class="w-full aspect-square object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                                 <h3 class="text-xl font-bold text-white">Kasım Murat Karakaya</h3>
+                                
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -202,68 +199,61 @@
         </div>
     </section>
 
+
+
         <!-- Mini Services Section -->
-    <section id="services" class="py-24">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Mini Services</h2>
-                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                    Experience the power of our AI services. Try out different models and see how they can help
-                    you create, communicate, and innovate.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Video Language Translation -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Video Language Translation</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Real-time translation of spoken language in videos to break language barriers.</p>
+        <section id="services" class="py-24">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Mini Services</h2>
+                    <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                        Experience the power of our AI services. Try out different models and see how they can help
+                        you create, communicate, and innovate.
+                    </p>
                 </div>
-                
-                <!-- Multilingual Audio Documents -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Multilingual Audio Documents</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Convert documents into natural-sounding speech for accessibility.</p>
-                </div>
-                
-                <!-- Bedtime Story Creator -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Bedtime Story Creator</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Generate personalized bedtime stories for children based on their interests.</p>
-                </div>
-                
-                <!-- Video Auto-Captions and Creation -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Video Auto-Captions & Creation</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Generate captions and create simple videos from text, images, or audio.</p>
-                </div>
-                
-                <!-- Daily Recap -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Daily Recap</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Personalized podcast delivering a daily summary of news and updates.</p>
-                </div>
-                
-                <!-- AI Powered Internet Research -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">AI Powered Internet Research</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Conduct comprehensive research with AI-driven insights and reports.</p>
-                </div>
-                
-                <!-- Text-to-Image Generator -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Text-to-Image Generator</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Transform written descriptions into visually stunning images.</p>
-                </div>
-                
-                <!-- Image-to-Video Generator -->
-                <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Image-to-Video Generator</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Convert sequences of images into dynamic videos with transitions and effects.</p>
+
+                <div class="max-w-4xl mx-auto fade-in">
+                    <!-- Services Tabs -->
+                    <div class="mb-8">
+                        <div class="flex border-b" role="tablist">
+                            <button class="px-4 py-2 text-sm font-medium text-blue-600 border-b-2 border-blue-600" role="tab" data-tab="llm">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
+                                Language Model
+                            </button>
+                            <!-- Add more tab buttons similarly -->
+                        </div>
+                    </div>
+
+                    <!-- Tab Panels -->
+                    <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg">
+                        <div class="tab-panel" id="llm-panel">
+                            <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
+                                Language Model
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">Interact with our advanced language model</p>
+                            <form class="space-y-4">
+                                <textarea
+                                    class="w-full min-h-[100px] px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-gray-800 dark:border-gray-600"
+                                    placeholder="Ask me anything..."
+                                ></textarea>
+                                <button type="submit" class="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                    Generate
+                                </button>
+                            </form>
+                        </div>
+                        <!-- Add more tab panels similarly -->
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
         <!-- Contact Section -->
         <section id="contact" class="py-24 bg-gray-50 dark:bg-gray-800">
@@ -275,24 +265,60 @@
                         hear from you.
                     </p>
                 </div>
+
+                <div class="max-w-md mx-auto fade-in">
+                    <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg">
+                        <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-white">Contact Us</h3>
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">First name</label>
+                                    <input type="text" placeholder="John" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-gray-800 dark:border-gray-600">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Last name</label>
+                                    <input type="text" placeholder="Doe" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-gray-800 dark:border-gray-600">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                                <input type="email" placeholder="john@example.com" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-gray-800 dark:border-gray-600">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
+                                <textarea placeholder="Your message here..." class="w-full min-h-[100px] px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-gray-800 dark:border-gray-600"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 </body>
 
 <script>
+
     document.addEventListener("DOMContentLoaded", function () {
     const reports = [
         {
             title: "Project Specifications Report",
+           // description: "Detailed project specifications and requirements.",
             fileUrl: "https://raw.githubusercontent.com/betululkuyurt/DBU/master/ProjectSpecificationsReport.pdf"
         },
         {
             title: "Software Requirements Specification Report",
+            //description: "Updates on the project milestones and progress.",
             fileUrl: "https://raw.githubusercontent.com/betululkuyurt/DBU/master/SoftwareRequirementsSpecificationReport.pdf"
         },
         {
             title: "HighLevel Design Report",
+           // description: "Comprehensive final documentation of the project.",
             fileUrl: "https://raw.githubusercontent.com/betululkuyurt/DBU/master/HighLevelDesignReport.pdf"
         }
     ];
@@ -305,7 +331,9 @@
 
         card.innerHTML = `
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">${report.title}</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">${report.description}</p>
             <div class="flex gap-4">
+             
                 <a href="${report.fileUrl}" download class="py-2 px-4 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors">
                     ⬇ Download
                 </a>
@@ -315,6 +343,6 @@
         container.appendChild(card);
     });
 });
+
 </script>
-<script src="script.js"></script>
 </html>
