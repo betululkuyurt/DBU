@@ -58,6 +58,24 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(element)
   })
 
+  // Animate geometric shapes
+  const animateShapes = () => {
+    const shapes = document.querySelectorAll('.elegant-shape');
+    shapes.forEach((shape, index) => {
+      // Add random subtle movements to enhance the floating effect
+      const randomDelay = Math.random() * 2;
+      const randomDuration = 10 + Math.random() * 5;
+      
+      shape.style.animationDelay = `${randomDelay}s`;
+      shape.style.animationDuration = `${randomDuration}s`;
+    });
+  }
+
+  // Call the animation function
+  if (document.querySelector('.elegant-shape')) {
+    animateShapes();
+  }
+
   // Initialize Particles.js
   if (typeof particlesJS !== "undefined") {
     particlesJS("particles-js", {
@@ -187,4 +205,3 @@ if (
 } else {
   document.documentElement.classList.remove("dark")
 }
-
